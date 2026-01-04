@@ -4,7 +4,7 @@ export interface PhysicsConfig {
   mass: number;
 }
 
-export interface ParakeetConfig {
+export interface ParakitConfig {
   sounds: boolean;
   soundVolume: number;
   physics: PhysicsConfig;
