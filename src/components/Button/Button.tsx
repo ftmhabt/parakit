@@ -6,14 +6,16 @@ import { cn } from "../../utils/classNames";
 import styles from "./Button.module.css";
 
 type ButtonProps = React.ComponentPropsWithoutRef<typeof motion.button> & {
-  variant?: "primary" | "secondary"; // adjust to your variants
+  variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
+  sound?: "chirp" | "pop" | "whoosh" | "none";
 };
 
 export function Button({
   children,
   variant = "primary",
   size = "md",
+  sound = "none",
   className,
   disabled,
   onClick,
