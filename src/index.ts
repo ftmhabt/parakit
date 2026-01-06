@@ -3,6 +3,7 @@ export { ParakitProvider } from "./providers/ParakitProvider";
 
 // Components
 export { Button } from "./components/Button";
+export { Card } from "./components/Card";
 
 // Hooks
 export { useParakit } from "./context/ParakitContext";
