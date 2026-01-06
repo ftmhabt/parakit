@@ -2,13 +2,14 @@ import { motion, useAnimation } from "framer-motion";
 import React from "react";
 import { useParakit } from "../../context/ParakitContext";
 import { useSound } from "../../hooks/useSound";
+import type { SoundName } from "../../types";
 import { cn } from "../../utils/classNames";
 import styles from "./Button.module.css";
 
 type ButtonProps = React.ComponentPropsWithoutRef<typeof motion.button> & {
   variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
-  sound?: "chirp" | "pop" | "whoosh" | "none";
+  sound?: SoundName | "none";
 };
 
 export function Button({

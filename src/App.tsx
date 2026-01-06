@@ -32,9 +32,7 @@ export default function App() {
 
         <Button variant="secondary">Secondary</Button>
 
-        {/* <Button variant="ghost">
-          Ghost
-        </Button> */}
+        <Button variant="ghost">Ghost</Button>
 
         <Button disabled>Disabled</Button>
 
